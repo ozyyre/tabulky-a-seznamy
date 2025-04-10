@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seznamy a tabulky</title>
     <link rel="stylesheet" href="hlavni.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -71,22 +79,22 @@
             </ul>
             <h3>Popisný seznam (description list)</h3>
             <dl>
-                <b>Internet society (ISOC)</b>
-                <dt>Mezinárodní organizace pro globální koordinaci a kooperaci v rámci internetu.</dt>
+                <dt><b>Internet society (ISOC)</b></dt>
+                <dd>Mezinárodní organizace pro globální koordinaci a kooperaci v rámci internetu.</dd>
             </dl>
             <dl>
-                <b>World Wide Web Consortium (W3C)</b>
-                <dt>Mezinárodní konsorcium, jehož členové společně s veřejností vyvíjejí webové standardy pro službu WWW.</dt>
+                <dt><b>World Wide Web Consortium (W3C)</b></dt>
+                <dd>Mezinárodní konsorcium, jehož členové společně s veřejností vyvíjejí webové standardy pro službu WWW.</dd>
             </dl>
             <dl>
-                <b>Internet Assigned Numbers Authority (IANA)</b>
-                <dt>Organizace, která dohlíží celosvětově na přidělování IP adres, správu kořenových zón DNS, definování typů médií pro MIME a další náležitosti internetových protokolů.</dt>
+                <dt><b>Internet Assigned Numbers Authority (IANA)</b></dt>
+                <dd>Organizace, která dohlíží celosvětově na přidělování IP adres, správu kořenových zón DNS, definování typů médií pro MIME a další náležitosti internetových protokolů.</dd>
             </dl>
         </section>
         <section id="tabulky">
             <h2 class="nadpis2">Tvorba tabulek</h2>
             <p>Komplexní tabulka v HTML může být tvořena záhlavím, tělem a zápatím. Pomocí atributů <b>colspan</b> a <b>rowspan</b> můžeme vytvořit sloučené buňky, které přesahují přes více sloupců i řádků.</p>
-            <table border="1">
+            <table>
                 <caption>Studijní obory na SSPU Opava – školní rok 2016/17</caption>
                 <thead>
                     <tr>
